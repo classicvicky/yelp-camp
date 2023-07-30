@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/yelp.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Yelp Camp</title>
+<head>
+<body>
+
+    <div class="create">
+        <div class="content">
+            <div class="left">
+                <div class="nav">
+                    <img src="asset/images/Logo.svg" alt="">
+                    <a href="view.html">Back to Campgrounds</a>
+                </div>
+                <div class="form">
+                    <h1>Start exploring camps from all around the world</h1>
+                    <form id="form"> 
+                        <p>Username</p><br>
+                        <p id="userid" style="color: red;"></p>
+                        <input type="text" placeholder="vicky_05" id="message"> <br><br>
+                        <p>Password</p><br>
+                        <input type="password" placeholder="Choose a Password" id="required"> <br> <br>
+                        <button type="submit">Create an account</button>
+                        <p>Already a user? <a href="sign.html">Sign in</a></p>
+                    </form>
+                </div>
+                </div>
+               
+
+            <div class="right">
+                <div class="context">
+                    <h3>"YelpCamp has honestly saved me hours of research times, and the camps on here are definitely well picked and added." </h3>
+                    <div class="t">
+                        <img src="asset/images/User img.svg" alt="">
+                        <h4>May Andrews <br><span>Professional Hiker</span></h4>
+                    </div>
+                    </div>
+                </div>
+                </div>
+             </div>
+           
+            <script>
+                var script =document.getElementById('form');
+                var message =document.getElementById('message');
+                var user = document.getElementById('user');
+                var required =document.getElementById('required');
+
+                form.onsubmit = function(event){
+                    if(message.value == ''){
+                            // alert('please enter your name');
+                            event.preventDefault();
+                            userid.innerHTML= 'please enter your name'
+
+                }else if(required.value == ''){
+                            // alert('Please enter your password')
+                            userid.innerHTML= 'please enter your password'
+                            event.preventDefault();
+                        }
+                        else{
+                           
+                        }
+            }     
+
+        </script>
+</body> 
+</html>
